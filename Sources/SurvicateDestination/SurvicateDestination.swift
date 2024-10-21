@@ -79,6 +79,10 @@ public class SurvicateDestination: DestinationPlugin {
         
         return event
     }
+
+    public func addListener(_ listener: SurvicateDelegate) {
+        SurvicateSdk.shared.addListener(listener)
+    }
     
     public func reset() {
         SurvicateSdk.shared.reset()
